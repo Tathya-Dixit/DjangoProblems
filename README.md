@@ -1,6 +1,17 @@
 ## Bank System
+### Working Process
+<div style="display: flex; justify-content: space-between;">
+  <img src="Images/page1.jpg" width="300" title="Working Process">
+  <img src="Images/page2.jpg" width="300" title="Working Process">
+  <img src="Images/page3.jpg" width="300" title="Working Process">
+  <img src="Images/page4.jpg" width="300" title="Working Process">
+  <img src="Images/page5.jpg" width="300" title="Working Process">
+  <img src="Images/page6.jpg" width="300" title="Working Process">
+</div>
 
-### 1. Lend Endpoint
+- some things might be changed in the code.
+
+### 1. LEND Endpoint
 **Endpoint**: `http://127.0.0.1:8000/api/lend/`
 
 #### Request Details
@@ -23,7 +34,7 @@
 }
 ```
 
-### 2. Payment Endpoint
+### 2. PAYMENT Endpoint
 **Endpoint**: `http://127.0.0.1:8000/api/payment/`
 
 #### Request Details
@@ -45,7 +56,7 @@
 }
 ```
 
-### 3. Ledger Endpoint
+### 3. LEDGER Endpoint
 **Endpoint**: `http://127.0.0.1:8000/api/ledger/`
 
 #### Request Details
@@ -96,7 +107,7 @@
 }
 ```
 
-### 4. Account Overview Endpoint
+### 4. ACCOUNT OVERVIEW Endpoint
 **Endpoint**: `http://127.0.0.1:8000/api/account_overview/`
 
 #### Request Details
