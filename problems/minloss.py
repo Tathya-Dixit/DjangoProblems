@@ -1,4 +1,3 @@
-
 def minloss(price):
     mini = 0
     minj = 0
@@ -17,6 +16,8 @@ def minloss(price):
                     minj = j
     return minloss, mini, minj
 
-price = list(map(int, input("Enter the prices: ").split()))
-loss, buy, sell = minloss(price)
-print(f"Minimum loss : {loss}\nYear to buy : {buy}\nYear to sell : {sell}")
+
+if __name__ == "__main__":
+    price = list(map(int, input("Enter the prices: ").split()))
+    loss, buy, sell = minloss(price)
+    print(f"Minimum loss : {loss}\nYear to buy : {buy}\nYear to sell : {sell}")

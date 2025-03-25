@@ -1,13 +1,12 @@
 def insformat(num):
-    integer, decimal = map(int,str(num).split('.'))
-    op = "."+str(decimal)
-    if integer < 1000:
-        op = str(integer) + op
+    integer, decimal = str(num).split('.')
+    op = "."+decimal
+    if int(integer) < 1000:
+        op = integer + op
     else:
+        integer = int(integer)
         temp = integer%1000
-        if temp == 0:
-            op = "000" + op
-        elif temp < 10:
+        if temp < 10:
             op = "00" + str(temp) + op
         elif temp < 100:
             op = "0" + str(temp) + op
@@ -24,5 +23,6 @@ def insformat(num):
 
     return op
 
-num = float(input("Enter the number: "))
-print(insformat(num))
+if __name__ == "__main__":
+    num = float(input("Enter the number: "))
+    print(insformat(num))

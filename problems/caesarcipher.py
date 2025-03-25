@@ -10,7 +10,6 @@ def encode(message, shift):
             encoded_message += char
     return encoded_message
 
-
 def decode(message, shift):
     decoded_message = ''
     for char in message:
